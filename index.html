@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Arkusz 8</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+
+.header {
+    border: 1px solid #000;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.middle {
+    display: flex;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+
+.nav {
+    width: 150px;
+    border-right: 1px solid #000;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.nav h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    text-align: center;
+    border: 1px solid #000;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+
+.main {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.main h3 {
+    font-size: 14px;
+    margin: 0 0 10px 0;
+}
+
+
+.main {
+    position: relative;
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    top: 32px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 1px solid #000;
+    pointer-events: none;
+}
+
+.sekcja {
+    border: 1px solid #000;
+    padding: 15px 0;
+    text-align: center;
+    margin-bottom: 10px;
+    background: #fff;
+}
+
+
+.footer {
+    border: 1px solid #000;
+    border-top: none;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        Blok nagłówkowy
+    </header>
+
+    <section class="middle">
+
+        <nav class="nav">
+            <h3>Blok nawigacyjny</h3>
+
+            <ul>
+                <li>Blok 1</li>
+                <li>Blok 2</li>
+                <li>Blok 3</li>
+            </ul>
+        </nav>
+
+        <main class="main">
+            <h3>Blok główny</h3>
+
+            <article class="sekcja">Sekcja 1</article>
+            <article class="sekcja">Sekcja 2</article>
+            <article class="sekcja">Sekcja 3</article>
+        </main>
+
+    </section>
+
+    <footer class="footer">
+        Blok stopki
+    </footer>
+
+</body>
+</html>
